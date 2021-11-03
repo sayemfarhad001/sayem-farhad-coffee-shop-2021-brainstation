@@ -1,0 +1,183 @@
+@use './partials/global';
+
+/* Head */
+.coffee-beans-logo {
+    min-width: 50px;
+    max-width: 120px;
+}
+
+h1,
+h2 {
+    font-size: 3.75rem;
+    font-family: "Open Sans";
+    font-weight: 300;
+}
+
+/* Title box*/
+.menu-header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+    min-width: 100%;
+    max-width: 100%;
+    min-height: 575px;
+    max-height: 600px;
+    background-position: center;
+    background-size: cover;
+   
+    background-image: url("../assets/coffee-circle.jpg");
+    background-repeat: none;
+
+    text-align: center;
+
+    .menu__title {        
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        min-width: 280px;
+        max-width: 300px;
+        min-height: 180px;
+        max-height: 200px;
+      
+        color: white;
+        background-color: #393939;     
+    }
+}
+
+
+/* Sub nav */
+
+.sub__nav,
+.sub__nav__list-item {
+    list-style: none;
+    font-size: 1.31rem;
+    font-family: "Open Sans";
+    font-weight: 400;
+
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+
+    background-color: #393939;
+    min-width: 100%;
+    max-width: 100%;
+
+    box-sizing: border-box;
+}
+.sub__nav__list-item-a {
+    text-decoration: none;
+    color: white;
+}
+.sub__nav {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+.sub__nav__list-item {
+    padding-top: 0;
+    padding-right: 0.5rem;
+    padding-bottom: 0;
+    padding-left: 1.25rem;
+    margin: 0;
+    border-left: 4px solid #5bacc3;
+    display: inline;
+}
+
+/* Content */
+
+h2 {
+    text-align: center;
+}
+
+h3 {
+    list-style: none;
+    font-size: 2.06rem;
+    font-family: "Open Sans";
+    font-weight: 300;
+    text-align: center;
+}
+
+.p-text {
+    font-family: "Open Sans";
+    font-style: italic;
+    font-weight: 400;
+    font-size: 1.125em;
+    text-align: center;
+    margin-right: 31.5%;
+    margin-left: 31.5%;
+}
+
+
+/* Section */
+.section__heading {
+    margin-top: 0;
+    padding-top: 15px;
+}
+
+.section__sub-heading {
+    margin-bottom: -10px;
+}
+
+.price {
+    color: #5bacc3;
+    text-align: center;
+    font-family: "Open Sans";
+    font-weight: 400;
+    font-size: 1.125em;
+    padding-bottom: 1.2rem;
+    margin-bottom: 0;
+}
+
+
+#hot_drinks,
+#pastries {
+    background-color: #fff0ed;
+}
+
+#cold_drinks {
+    background-color: #f7f7f7;
+}
+
+
+/* UI Changes for Mobile device - Iphone X */
+
+@media screen and (max-width: 375px) {
+    
+    .nav__bar-list-container, .nav__bar-list, .nav__bar-list-item, .nav__bar-list-item a {
+        text-decoration: none;
+        list-style: none;
+        color: #393939;
+        background-color: #fff0ed;
+        font-size: 2.2rem;
+        font-family: "Open Sans";
+        font-weight: 400;
+        display: block;
+    }
+
+    body {
+        display: inline-block;
+    }
+    .sub__nav__list-item {
+        padding-top: 0;
+        padding-right: 0.5rem;
+        padding-bottom: 0px;
+        margin-bottom: 20px;
+        padding-left: 18px;
+        /* margin: 0; */
+        border-left: 4px solid #5bacc3;
+        display: block;
+        text-align: left;
+    }
+    .p-text {
+        font-family: "Open Sans";
+        font-style: italic;
+        font-weight: 400;
+        font-size: 1.125em;
+        text-align: center;
+        margin-right: 5vw;
+        margin-left: 5vw;
+    }
+
+  }
